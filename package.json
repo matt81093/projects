@@ -13,8 +13,9 @@
     "version": "astro --version"
   },
   "dependencies": {
-    "astro": "^0.24.3",
-    "svelte": "^3.46.4",
+    "@astrojs/svelte": "^1.0.0",
+    "astro": "^1.0.5",
+    "svelte": "^3.49.0",
     "svelte-cubed": "^0.2.1",
     "three": "^0.138.3"
   },
