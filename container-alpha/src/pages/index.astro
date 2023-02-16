@@ -1,0 +1,26 @@
+---
+import Scaffold from '../layouts/PageScaffold.svelte'
+import ThreeBackground from '../components/threeBackground.svelte'
+
+let title = 'Landing Platform'
+---
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>${title}</title>
+</head>
+
+<Scaffold>
+	<ThreeBackground client:only>
+		<div slot="default">
+			<div id="placeholder">Loading Three.js scene...</div>
+		</div>
+	</ThreeBackground>
+
+	<!--
+
+		Features go here
+
+	 -->
+</Scaffold>

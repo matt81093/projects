@@ -1,7 +1,9 @@
 tasks:
-  - init: npm install
+  - init: |
+      cd ./container-alpha
+      npm install
     command: |
-      npm run dev
+      npm run "astro dev"
 ports:
   - port: 5000
     onOpen: ignore
@@ -9,11 +11,8 @@ vscode:
   extensions:
     - svelte.svelte-vscode
     - oouo-diogo-perdigao.docthis
-    - hookyqr.beautify
     - cschleiden.vscode-github-actions
-    - github.vscode-pull-request-github
     - eamodio.gitlens
-    - runem.lit-plugin
     - codeandstuff.package-json-upgrade
     - esbenp.prettier-vscode
     - gencer.html-slim-scss-css-class-completion
