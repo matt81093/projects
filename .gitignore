@@ -1,0 +1,5 @@
+# astro build output
+dist
+
+# packages
+node_modules/
