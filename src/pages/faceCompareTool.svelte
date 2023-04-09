@@ -54,15 +54,17 @@
 	}
 </script>
 
-<div>
-	<h1>Highlight Facial Characteristics and Compare Images</h1>
-	<p>Select two images to compare:</p>
-	<input type="file" accept="image/*" bind:files={$img1} />
-	<input type="file" accept="image/*" bind:files={$img2} />
-	<button on:click={() => highlightFaces(img1)}>Highlight Faces</button>
-	<button on:click={compareImages}>Compare Images</button>
-	<canvas id="outputCanvas" />
-</div>
+<body>
+	<div>
+		<h1>Highlight Facial Characteristics and Compare Images</h1>
+		<p>Select two images to compare:</p>
+		<input type="file" accept="image/*" bind:files={$img1} />
+		<input type="file" accept="image/*" bind:files={$img2} />
+		<button on:click={() => highlightFaces(img1)}>Highlight Faces</button>
+		<button on:click={compareImages}>Compare Images</button>
+		<canvas id="outputCanvas" />
+	</div>
+</body>
 
 <style>
 	canvas {

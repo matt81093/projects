@@ -40,7 +40,7 @@
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "uname -a",
 	"postCreateCommand": "npm install",
-	"postStartCommand": "npm run 'astro dev' -- --host 0.0.0.0"
+	"postStartCommand": "npm run 'astro dev'"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
